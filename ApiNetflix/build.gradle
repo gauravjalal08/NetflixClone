@@ -1,0 +1,102 @@
+
+plugins {
+    id 'org.springframework.boot' version '2.6.7'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    compileOnly 'org.projectlombok:lombok:1.18.22'
+    annotationProcessor 'org.projectlombok:lombok:1.18.22'
+    implementation 'org.apache.commons:commons-dbcp2:2.9.0'
+    implementation 'org.springframework.boot:spring-boot-starter-jdbc:2.6.6'
+    implementation 'dev.miku:r2dbc-mysql:0.8.2.RELEASE'
+    implementation 'io.jsonwebtoken:jjwt:0.9.1'
+    implementation 'jakarta.activation:jakarta.activation-api:2.1.0'
+    implementation 'dev.miku:r2dbc-mysql:0.8.2.RELEASE'
+    implementation 'org.glassfish.jaxb:jaxb-runtime:4.0.0-M4'
+    implementation 'mysql:mysql-connector-java:8.0.29'
+    implementation 'javax.xml.bind:jaxb-api:2.4.0-b180830.0359'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.7.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation 'software.amazon.awssdk:s3:2.17.167'
+  implementation 'org.springframework.security:spring-security-web:5.7.1'
+   //implementation 'org.springframework.security:spring-security-config:5.7.1'
+    //implementation 'org.springframework.boot:spring-boot-starter-security:2.7.0'
+    implementation 'com.amazonaws:aws-java-sdk-s3:1.12.242'
+    implementation 'net.java.javabuild:builder-maven-plugin:1.1'
+    implementation 'org.apache.maven.plugins:maven-compiler-plugin:3.10.1'
+    implementation 'org.hibernate:hibernate-core:6.1.2.Final'
+
+
+
+
+    implementation 'com.amazonaws:aws-java-sdk:1.0.12'
+    compileOnly 'javax.servlet:servlet-api:3.0-alpha-1'
+    compileOnly 'javax.servlet:servlet-api:2.3'
+
+
+
+
+
+    implementation 'org.springframework.security:spring-security-core:5.7.1'
+
+
+
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
+
+/*
+plugins {
+    id 'org.springframework.boot' version '2.5.0'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.6.6'
+    implementation 'org.apache.commons:commons-dbcp2:2.9.0'
+    implementation 'org.springframework.boot:spring-boot-starter-jdbc:2.6.6'
+    implementation 'dev.miku:r2dbc-mysql:0.8.2.RELEASE'
+    compileOnly 'org.projectlombok:lombok:1.18.22'
+    annotationProcessor 'org.projectlombok:lombok:1.18.22'
+    implementation 'mysql:mysql-connector-java:8.0.28'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation 'io.jsonwebtoken:jjwt:0.9.1'
+    implementation 'jakarta.activation:jakarta.activation-api:2.1.0'
+    implementation 'org.glassfish.jaxb:jaxb-runtime:4.0.0-M4'
+    implementation 'mysql:mysql-connector-java:8.0.29'
+    implementation 'com.amazonaws:aws-java-sdk-s3:1.12.242'
+    implementation 'software.amazon.awssdk:auth:2.17.247'
+    implementation 'org.hibernate:hibernate-core:6.1.2.Final'
+
+
+
+}
+
+test {
+    useJUnitPlatform()
+}*/
